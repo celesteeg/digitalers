@@ -1,0 +1,23 @@
+table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+thead>tr>th {
+    padding: 1em;
+}
+
+thead>tr>th:first-child {
+    background-color: aqua;
+
+}
+
+thead>tr>th{
+    background-color: #EEE;
+}
+
+table>tbody>tr:last-child>td{
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}

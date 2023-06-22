@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: coral;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 15px;
+            padding-top: 10px;
+            color: brown;
+        }
+
+        form{
+            background-color: brown;
+            width: 40%;
+            margin: auto;
+            padding: 2em;
+            margin-top: 1em;
+            border-radius: 15px;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Bienvenidos Digitalers</h1>
+       <h2>Registro para ingresar un nuevo usuario</h2>
+    </header>
+    <main>
+    <form method="get">
+        <div>
+        <label for="txtNombre">Nombre:</label>
+         <div><input type="text" id="txtNombre" name="Nombre" required minlength="1" maxlength="20"/></div>
+        </div>
+        <div>
+         <label for="txtApellido">Apellido:</label>
+         <div><input type="text" id="txtApellido" name="Apellido" required pattern="^[A-Z][a-z]*$"/></div>
+        </div>
+        <div>
+            <label for="txtDocumento">Documento</label>
+            <div>
+                <input type="number" id="txtDocumento" name="Documento" required min="1000000"max="70000000">
+            </div>
+        </div>
+
+
+             <div>
+                <label for=""></label>
+                <div> <input type="text"></div>
+            </div>
+
+
+
+
+         <div>
+            <label for="txtFechaNacimiento">Fecha De Nacimiento</label>
+            <div><input type="date" id="txtFechaNacimiento" name="fecha" required></div>
+         </div>
+         <div>
+            <label for="txtPassword">Password</label>
+            <div> <input type="password" id="txtPassword" name="Password" required ></div>
+         </div>
+         <div>
+            <label for="txtVerificacionPassword">Verificacion Password</label>
+            <div><input type="password" id="txtVerificacionPassword" name="verificacionPassword">
+        
+            </div>
+         </div>
+         <button>Enviar Formulario</button>
+    </form>
+    </main>
+    <footer>
+        <h6>@ByCeleste.Esquivel</h6>
+    </footer>
+</body>
+</html>
