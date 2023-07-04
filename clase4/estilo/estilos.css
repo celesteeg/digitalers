@@ -1,0 +1,21 @@
+header{
+    background-color: blue;
+    color: #000545;
+
+}
+body>header>img{
+    display: inline-block
+}
+
+form{
+    border: 1px solid gray;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: -21px 27px 33px -4px;
+    border-radius: 33px 40px 0px 50px;
+}
+
+footer{
+    background-color: #000545;
+    color: white;
+}

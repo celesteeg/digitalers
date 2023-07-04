@@ -1,0 +1,65 @@
+.grid-container{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 2fr 1fr;
+    
+}
+
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.azul{
+    background-color: blue;
+}
+.amarillo{
+    background-color: yellow;
+}
+
+#caja1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+#caja2{
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#caja3{
+    grid-column: 1;
+    grid-row-end: 2;
+    grid-row-end: 3;
+
+}
+
+.tablero-trabado{
+    display: grid;
+    width: 400px;
+    height: 500px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "A1,CV, CV,A2"
+    "A1,CV, CV, A2"
+    "A3,A4,A4,A5"
+    "A3,R1,R2,V5"
+    "R3, , ,R4";
+}
+
+#layout{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';  
+    width: 100%;
+    height: 600px;
+    gap: 3px;
+}
